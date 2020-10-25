@@ -1,0 +1,5 @@
+<ul>
+  <{foreach item=wfsnipn from=$block.snipnew}>
+    <li><a href="<{$xoops_url}>/modules/wfsnippets/index.php?op=view&t=<{$wfsnipn.id}>"><{$wfsnipn.title}></a> (<{$wfsnipn.new}>)</li>
+  <{/foreach}>
+</ul>

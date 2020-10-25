@@ -1,0 +1,67 @@
+<table border="0"  width="90%" cellspacing="1" cellpadding="1" align="center">
+
+<tr>
+<td colspan="2">
+<span style="float: right; width: 110px; height: 24px; margin: 0;">
+<a href="<{$xoops_url}>/modules/snippets/">
+<img src="<{$xoops_url}>/modules/wfsnippets/images/sec_snippets.gif" border="0" width="110" height="24">
+</a>
+</span>
+</td>
+</tr>
+
+<tr> 
+	<td align="left"><div align="left"><h4><{$lang_topicsindex}> : <{$category.name}></h4></div></td>
+</tr>
+<tr> 
+	<td align="left"><div align="left"><{$category.catjump}></div></td>
+</tr>
+
+</table>
+<table border="0" width="90%" cellspacing="1" cellpadding="3" align="center">
+	<tr> 
+		<td align="left" valign="middle" colspan="5">
+			<div><{$category.description}><br>
+			<br></div>
+		</td>
+	</tr>
+	<tr> 
+		<td align="left" class="itemHead" width='23%'><b><{$lang_title}></b></td>
+		<td align="left" class="itemHead" width='25%'><b><{$lang_summary}></b></td>
+		<td align="left" class="itemHead" width="17%"> 
+			<div align="center"><b><{$lang_author}></b></div>
+		</td>
+		<td align="left" class="itemHead" width="19%" > 
+			<div align="center"><b><{$lang_submitted}></b></div>
+		</td>
+		<td align="left" class="itemHead" width="5%"> 
+			<div align="center"><b><{$lang_hits}></b></div>
+		</td>
+	</tr>
+
+	<!-- Start topic loop -->
+	<{foreach item=topics from=$topics}> 
+	<tr valign="top"> 
+		<td class="head" align="left"><a href="index.php?op=view&t=<{$topics.id}>"><b><{$topics.title}></b></a></td>
+		<td class="even" align="left"><{$topics.summary}></td>
+		<td class="even" align="left"> 
+			<div align="center"><{$topics.poster}></div>
+		</td>
+		<td class="even" align="left"> 
+			<div align="center"><{$topics.datesub}></div>
+		</td>
+		<td class="even" align="left"> 
+			<div align="center"><{$topics.counter}></div>
+		</td>
+	</tr>
+	<{/foreach}> 
+	<!-- End topic loop -->
+</table>
+<table width="100%" border="0" cellspacing="1" cellpadding="2">
+  <tr> 
+    <td valign="middle" align="center">&nbsp;</td>
+  </tr>
+  <tr> 
+    <td valign="middle" align="left"><{$category.catlink}></td>
+  </tr>
+</table>

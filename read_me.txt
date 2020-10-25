@@ -1,0 +1,98 @@
+/* 
+* $Id: read_me.txt,v 1.1 2006/03/27 01:06:49 mikhail Exp $
+* Module: WF-Snippets
+* Version: v1.00
+* Release Date: 15 July 2003
+* Author: Catzwolf
+* Licence: GNU
+*/
+
+-------------
+Introduction:
+-------------
+
+Hi,
+
+Thanks for taking the time to download and try WF-Snippets, I hope that you enjoy using this module and you find a use for it 
+
+Somewhere within your website.
+
+Short Description.
+
+Needing to put short pieces of text on your website?  This could be code, book or basically anything type of snippets you want to give to your users.  WF-Snippets is easy to use, clean interface and will allow you to have content on your website in seconds.
+
+WF-Snippets is smarty enabled (templates and cached files), makes use of Xoops comments and search functions.  Categories and topics are shown by their weight and can be hidden through the use of Groupaccess and you users can vote and rate each snippet. 
+
+WF-Snippets should work with register globals off (does on my test box).
+
+--------------
+How to install
+--------------
+
+WF-Snippets should be treated like any other Xoops module and should be installed exactly the same way.
+
+The story goes something like this (those that are new to Xoops) :-)
+
+1, Uninstall the package somewhere on your hard drive (Somewhere that you will remember)
+2, Use a FTP program to upload the wfSnippets folder and its contents to Xoopsroot/modules/ on your server (should be NO need to make a new folder called wfSnippets.  But if you do, just copy the contents of the folder and not the folder with its contents).
+3 Login to Xoops as an admin and click on 'Administration Menu' in user menu.
+4 Once you are logged in as admin and in Xoops site admin, Hoover the mouse cursor over the 'system Admin' icon and then click on the 'Modules' link.
+5 You should have arrived at 'Modules Administration' now, look down the module column list until you find the WF-Snippets admin icon (the one with Q: A:) and double click on it.  Xoops will now install the module and then prompt you to return 'back to 
+
+Module Administration page' and then is the install complete.
+
+If you receive any errors while installing, complete the whole procedure again from the beginning and if you still have the same error again go to the WF-Snippets website (http://wfsections.xoops2.com) and post the install error within the forum.
+
+-----------------
+How to Use WF-Snippets
+-----------------
+
+WF-Snippets's comes in roughly five sections:
+
+1.  The End User area. This is where your website users can view the Question and answers and really needs no work on your part.
+
+2. Snippets Topics Admin. You can create, deleted and modify your Snippets Category/topics from this area.  Use the text boxes to add to your new or modified Snippets.
+
+A. Allow Access to:  This lists the different types of users for your website, by highlighting or un-highlighting you can grant or deny these users access to the Topic in question (Same for each Category).	
+
+B. Weight:  This is used to list your Topics in the order you want.  Entering a 0 weight will show this topic first and all other nummeric values given will be shown in that order.
+
+C. Create in:  This is the Snippets topic (Only) that your Snippets will be created within. (Required)
+D. Title:  The title you will give to a topic (Same for each Category).
+E. Question: Use this to enter your frequently asked question. (Required) (Topics only)
+F. Answer: Use this box to answer the above question. (Required) (Topics only)
+G. Summary. A short description to the Snippet.   (Category only)
+
+3. WF-Snippets Category Admin. Use this area to create Snippets Categories.  This helps break up each part of your Snippets into nice little neat chunks and this will help your users find what the are looking for quicker and easier. 
+You can add as many Categories as you like, but these will all remain in the index page.
+
+Again as with Snippets topics, use the text boxes to add or modify your categories.  The whole process of doing this rather easy and should be self-explanatory.
+
+4. Snippets Submission (End User side). Your user can submit new Snippets directly to your site using the 'submit Snippets' link in the main menu. Once a user submits a new Snippets an email 'should' be sent to you telling you of this, the new Snippets is the ready for validation and can only be validated by in the WF-Snippets admin area.  These new Snippets will not show within the User side until you have done this.  
+
+5. Validate new submissions: From here you can approve, delete or view a submitted Snippets.
+
+
+----------------------------
+Getting help for this module
+----------------------------
+
+If you require help or have a question regarding this module, you can visit the WF-Section website 
+
+(http://wfsections.xoops2.com) and using the forum, post your questions and I will try to answer these as best I can and when I can.
+
+------------------------
+Reporting bugs in WF-Snippets  
+------------------------
+
+As above, visit http://wfsections.xoops2.com and report the bug/s to the 'Mantis bug tracker', you can track your bug/s from there too.
+
+-------
+History
+-------
+15 July 2003 v1.00
+No history and first public release. 
+
+Credits and Thanks go to the following:
+Hsalazar - For his idea behind this module, the work he did converting WF-FAQ to this module and also letting release it under the WF banner.
+ 

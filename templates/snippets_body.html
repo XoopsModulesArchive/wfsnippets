@@ -1,0 +1,58 @@
+<table border="0" width="90%" cellspacing="1" cellpadding="2" align="center">
+
+<tr>
+<td colspan="2">
+<span style="float: right; width: 110px; height: 24px; margin: 0;">
+<a href="<{$xoops_url}>/modules/snippets/">
+<img src="<{$xoops_url}>/modules/wfsnippets/images/sec_snippets.gif" border="0" width="110" height="24">
+</a>
+</span>
+</td>
+</tr>
+
+<tr> 
+	<td> 
+		<div align="left">
+			<{$lang_articleheading}> <{$snippetpage.adminlink}>
+		</div>
+	</td>
+</tr>
+</table>
+<table border="0" width="100%" cellspacing="1" cellpadding="2">
+  <tr> 
+    <td align="left" class="newsContent"><br>
+      <div style="float:right; width: 100px; padding: 6px; border: 1px solid #e7e7e7; display: inline;"> 
+        <div><b><{$lang_publish}>: </b><{$snippetpage.poster}></div>
+        <div><b><{$lang_posted}>: </b><{$snippetpage.datesub}></div>
+        <div><b><{$lang_read}>: </b><{$snippetpage.counter}>&nbsp;<{$lang_times}></div>
+      </div>
+      <{$snippetpage.body}><br>
+    </td>
+  </tr>
+  <tr> 
+    <td> 
+      <div align="left"><{$snippetpage.catlink}></div>
+    </td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr> 
+    <td align="center" class = 'even'> <{$snippetpage.rating}><{$snippetpage.votes}><br>
+      <{$snippetpage.ratesnippet}></td>
+  </tr>
+  <tr> 
+    <td> 
+      <div style="text-align: center; padding: 3px;
+	margin:3px;"> <{$commentsnav}> <{$lang_notice}> </div>
+      <div style="margin:3px; padding: 3px;"> 
+        <!-- start comments loop -->
+        <{if $comment_mode == "flat"}> <{include file="db:system_comments_flat.html"}> 
+        <{elseif $comment_mode == "thread"}> <{include file="db:system_comments_thread.html"}> 
+        <{elseif $comment_mode == "nest"}> <{include file="db:system_comments_nest.html"}> 
+        <{/if}> 
+        <!-- end comments loop -->
+      </div>
+    </td>
+  </tr>
+</table>
